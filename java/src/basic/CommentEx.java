@@ -1,3 +1,4 @@
+package basic;
 /**
  * 문서 설명용 주석
  * @author ict03-13
@@ -5,7 +6,7 @@
  * @since 23 02 17~
  */
 //이 파일은 주석을 연습하는 파일입니다.
-public class commentEx {
+public class CommentEx {
 	public static void main(String[] args) {
 
 	

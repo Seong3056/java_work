@@ -1,4 +1,4 @@
-package basic;
+package basic.casting;
 
 
 public class CastingEx3 {

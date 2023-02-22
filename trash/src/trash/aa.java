@@ -3,7 +3,25 @@ import java.util.Random;
 
 
 public class aa {
-
+	
+	/*private void psv() {
+		Random random = new Random();
+		int ran = random.nextInt(999);
+		int ran1 = ran;
+		int i;
+		int[] comp = new int[4];
+		
+		for(i=3;i>0;i--) {
+			comp[i] = ran % 10;
+			ran/=10;
+			System.out.println(i+"번째 숫자:"+comp[i]);	}
+		
+		for(i=0;i<3;i++) {
+			if(comp[i] == comp[(i+1)%3]) {
+				System.out.println("중복된 숫자"+comp[i]+ ", "+ comp[(i+1)%3]);
+				l=1;	}
+	}
+	}*/
 	public static void main(String[] args) {		
 		Random random = new Random(); // 랜덤 객체 생성
 		int ran,ran1;
@@ -11,7 +29,7 @@ public class aa {
 		int i;
 		int l=1;
 		int s,b,o;
-		loop: 
+		
 		while(l==1) {
 			l=0;
 			random.setSeed(System.currentTimeMillis());

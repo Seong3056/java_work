@@ -1,4 +1,4 @@
-package basic;
+package basic.begin;
 
 import java.util.Scanner;
 //1. Scanner api 로딩 (제공되는 Scanner 정보를 현재 클래스로 불러오기)

@@ -1,4 +1,4 @@
-package basic;
+package basic.begin;
 /**
  * 문서 설명용 주석
  * @author ict03-13

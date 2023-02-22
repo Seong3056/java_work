@@ -1,4 +1,4 @@
-package basic;
+package basic.casting;
 
 public class CastingEx1 {
 	public static void main(String[] args) {

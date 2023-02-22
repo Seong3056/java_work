@@ -1,4 +1,4 @@
-package basic;
+package basic.datatype;
 
 public class FloatEx {
  public static void main(String[] args) {

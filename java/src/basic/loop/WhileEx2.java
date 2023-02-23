@@ -23,8 +23,8 @@ public static void main(String[] args) {
 	
 	int c = 1;
 	int i = 0;
-	while(c<=30000) {
-		if(c%258==0)	i++;
+	while(c <= 30000) {
+		if(c % 258==0)	i++;
 		c++;
 	}
 	System.out.printf("1~30000에서 258의 배수의 개수: %d",i);
@@ -32,8 +32,8 @@ public static void main(String[] args) {
 	
 	int d = 1;
 	int j = 0;
-	while (d<=1000) {
-		if(1000%d == 0) j++;
+	while (d <= 1000) {
+		if(1000 % d == 0) j++;
 		d++;
 	}
 	System.out.printf("1000의 약수의 개수: %d",j);

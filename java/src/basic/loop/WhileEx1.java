@@ -26,10 +26,10 @@ public class WhileEx1 {
 		
 		}
 		System.out.println("-----------------------");
-		int = 0 ;
+		int i = 0 ;
 		int total= 0;
 		while(i<=10){
-			i++
+			i++;
 		}
 
 	}

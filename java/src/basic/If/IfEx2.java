@@ -20,7 +20,7 @@ public class IfEx2 {
 			else if(age >= 8) 	System.out.println("초등학생입니다.");
 			else				System.out.println("어린이입니다.");
 		}
-
+		sc.close();
 	}
 
 }

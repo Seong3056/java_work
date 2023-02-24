@@ -27,7 +27,7 @@ public class WhileEx1 {
 		}
 		System.out.println("-----------------------");
 		int i = 0 ;
-		int total= 0;
+		//int total= 0;
 		while(i<=10){
 			i++;
 		}

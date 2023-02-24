@@ -18,7 +18,7 @@ public class LoopNesting2 {
 		
 		System.out.print("정수: ");
 		int a = sc.nextInt();
-		int n=0; 		//약수의 갯수
+		//int n=0;	//약수의 갯수
 		int m=0; 	//소수의 갯수
 		System.out.print("소수:");
 		int i,j;
@@ -30,17 +30,17 @@ public class LoopNesting2 {
 			
 			if(n<=2) {
 				System.out.print(" "+j);
-				m++;	
+		0		m++;	
 			}
 		}
 		System.out.println();
 		System.out.printf("소수의 개수 %d개",m);
 		}*/
 		for(j=2; j<=a;j++) {
-			for(i=2; j%i!=0; i++) {
+			for(i=2; j%i!=0; i++); 
 				//j%i 했을때 0이아니라면 i++ 실행
 				//System.out.printf("n%d i%d\n",n,i);
-			}
+			
 			if(i==j) {
 				System.out.printf("%d ",j);
 				m++;

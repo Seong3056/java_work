@@ -29,7 +29,7 @@ public class WhileQuiz03 {
 //case 2		
 		total = 0;
 		i = (x>y ? y : x);		
-		while((x>y ? x>=i : i<=y)) {
+		while( (x>y ? x>=i : i<=y) ) {
 			if(x>y) total += i++;
 			else 	total += i++;
 		}

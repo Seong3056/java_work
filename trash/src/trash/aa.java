@@ -1,6 +1,7 @@
 package trash;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class aa {
 	public static int rand() {
@@ -25,22 +26,92 @@ public class aa {
 			}
 			return r;
 		}
+
+	}
+	static int[] digit(int a) {
+		int[] tmp = new int[3] ;
+
+		for(int i=2;i>=0;i--) {
+			tmp[i] = a%10;
+			a /= 10;
+		}
+
+
+
+		return tmp;
+	}
+	static int strike(int r) {
+		int s=0;
+		int[] comp = new int[3];
 		
+		for(int i=2;i>=0;i--) {
+			comp[i] = r%10;
+			r /= 10;
+		}
+		for(int i =0;i<3;i++) {
+			if(comp[i]==i) { 
+				s++;
+				//System.out.printf("i%d s%d\n",i,s);
+				}
+			
+		
+	}
+		return s;
+	}
+	static int ball(int r) {
+		int b=0;
+		int i,j;
+		int[] comp = new int[3];
+		
+		for(i=2;i>=0;i--) {
+			comp[i] = r%10;
+			r /= 10;
+		}
+		for(i=0;i<3;i++) {
+		for(j=0;j<3;j++) {			
+			if(comp[i]==j) {
+				b++;
+				//System.out.printf("i%d j%d b%d\n",i,j,b);
+				}
+			
+		}//for_j
+		}
+		return b;
 	}
 
 
-	
 
 	public static void main(String[] args) {		
-		System.out.println("-");
+
+		int i,j;
+		int s=0,b=0;
+		String o = "out";
+		boolean Oflag;
+		int [] comp = new int[3];
 		int r = rand();
+		int r1 = r;
 		System.out.println(r);
-		}
-				
-				
-				
-				
-	}
 		
+		while(true) {
+			Oflag = false;
+			Scanner sc = new Scanner(System.in);
+			System.out.print("맞춰볼 숫자를 입력: ");
+			int x = sc.nextInt();
+
+			s = strike(x);
+			b = ball(x) - s;
+			if(s==0&&b==0) Oflag = true;
+			if(Oflag) System.out.println(o);
+			else System.out.printf("S%d B%d\n",s,b);
+
+
+		}
+	}//main
+
+
+
+
+}//class
+
 
 

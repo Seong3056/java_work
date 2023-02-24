@@ -16,10 +16,14 @@ public class BreakEx1 {
 		   종료시키고 싶다면 바깥쪽 반복문에 label을 붙인다.
 		   그리고, break 선언 시 label을 함께 선언한다.
 		 */
-		outer: for(int i=0; i<=2; i++)
+		outer:
+			for(int i=0; i<=2;i++) {
+				System.out.println(i+"i");
 			for(int j=0;j<=1;j++) {
-				if(i==j) break outer;
+				System.out.println(j+"j");
+				if(i == j) break outer;
 				System.out.println(i+"-"+j);
+				}
 			}
 		/* 0-0 break;┐
 		   0-1   	 ┘

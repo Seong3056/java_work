@@ -174,25 +174,26 @@ public class EmployeeManager {
 			System.out.print("> ");
 			String num5 = sc.next();
 			
-				for(i=0;i<count;i++) {
+				for(i=0;i<count;i++) {					//입력받은 num5(사번)이 저장된 배열userNum[]에 있는지 검사 || 만약 있다면 flag5 = true / 없다면 flag5 = false
 					if(num5.equals(userNums[i])) {
 						flag5 = true;						
 						break;
 					}//case 5 for if
 				}//case 5 for i
-				if(flag5) {
+				if(flag5) {								//flag5 = true일때 사번/이름/나이/부서명을 출력
 				System.out.printf("사번 %s 의 정보입니다.",userNums[i]);	//사번
-				System.out.printf("\n  이름: %s",names[i]);				//이름
-				System.out.printf("\n  나이: %d",ages[i]);				//나이
+				System.out.printf("\n  이름: %s",names[i]);			//이름
+				System.out.printf("\n  나이: %d",ages[i]);			//나이
 				System.out.printf("\n  부서: %s",departments[i]);		//부서명
-				sw5:
+				sw5:																																//sw5:
 					while(flagw) {
 				System.out.printf("\n사번 %s의 정보를 정말 삭제하시겠습니까?[Y / N] ",userNums[i]);
-				String ans = sc.next();
+				String ans = sc.next();					//Y/N 을 입력받는다.
 //				System.out.println("ans="+ans); //ans의 값이 제대로 받는지 확인
-					switch(ans) {
+					switch(ans) {//스위치 
 					
-					case "Y": case "y":for(int j =i;j<count;j++) {
+					case "Y": case "y":	//입력받는 값이 Y,y일경우 삭제를 하는 코드
+						for(int j =i;j<count;j++) {
 							userNums[j]=userNums[j+1];
 							names[j]=names[j+1];
 							ages[j]=ages[j+1];
@@ -202,18 +203,18 @@ public class EmployeeManager {
 						System.out.println("삭제가 완료되었습니다. 시작메뉴로 돌아갑니다.");
 						System.out.println("---------------------------------");
 						flagw = false;
-						break;//case5 caseYN Y
+						break;//case5 caseYN Y 삭제하는 코드의 끝
 						
-					case "N": case "n":
+					case "N": case "n"://N,n을 입력할경우 삭제를 안하는 코드
 						System.out.println("삭제하지 않습니다. 시작메뉴로 돌아갑니다.");
 						System.out.println("---------------------------------");
 						flagw = false;
-						break;//case5 caseYN N
+						break;//case5 caseYN N 의 끝
 						
-					default:
+					default:// Y,y,N,n이 아닌 다른문자를 입력했을경우
 						System.out.println("올바른 문자를 입력하세요.");						
 						System.out.println("---------------------------------");
-						continue sw5;//case5 caseYN default	 Y 또는 N 이외의 값을 입력했을때 while로 돌아간다 lable 같은경우는 반복문에서만 동작하기때문에 switch문에서는 lable을 단독으로 동작할수없다 a: while{ switch { continue a;}}				
+						continue sw5;//sw5위치로 돌아가서 다시 실행한다.	//case5 caseYN default	 Y 또는 N 이외의 값을 입력했을때 while로 돌아간다 lable 같은경우는 반복문에서만 동작하기때문에 switch문에서는 lable을 단독으로 동작할수없다 a: while{ switch { continue a;}}				
 					}//case5 switch
 				}
 				}//case5 if

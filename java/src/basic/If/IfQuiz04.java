@@ -14,7 +14,9 @@ public class IfQuiz04 {
 		
 		for(i=0;i<3;i++) {
 			System.out.printf("%d번째 정수: ",i+1);
-			x[i] = sc.nextInt(); }
+			x[i] = sc.nextInt(); 
+			
+		}
 		
 		
 		if	
@@ -44,8 +46,8 @@ public class IfQuiz04 {
 				mid = x[0];	min = x[1];		}
 			}
 		System.out.printf("최댓값: %d\n중간값: %d\n최솟값: %d",max,mid,min);
-	
 		sc.close();
+	
 	
 	
 	}

@@ -1,7 +1,5 @@
 package basic.datatype;
 
-import java.util.concurrent.DelayQueue;
-import java.util.concurrent.Delayed;
 
 public class IntergerEx {
 

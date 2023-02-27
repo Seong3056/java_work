@@ -48,7 +48,7 @@ public class BreakEx2 {
 			else System.out.println("오답");
 		}
 		
-		
+		sc.close();
 	}
 
 }

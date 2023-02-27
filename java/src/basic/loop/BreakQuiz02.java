@@ -41,6 +41,7 @@ public class BreakQuiz02 {
 		}
 		if(c<=7) System.out.printf("%d/7 맞추셨습니다!",c);
 		else 	 System.out.printf("%d번째 맞추셨습니다!",c);
+		sc.close();
 	}
 
 }

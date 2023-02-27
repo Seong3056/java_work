@@ -1,6 +1,4 @@
 package trash;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class aa {
@@ -78,34 +76,39 @@ public class aa {
 		}
 		return b;
 	}
+	static void sbo(int x) {
+		
+		boolean Oflag=false;
+		
+		int s = strike(x);
+		int b = ball(x) - s;
+		if(s==0&&b==0) Oflag = true;
+		if(Oflag) System.out.println("Out");
+		else System.out.printf("S%d B%d\n",s,b);
+		
+	};
+	
 
 
 
 	public static void main(String[] args) {		
 
-		int i,j;
-		int s=0,b=0;
-		String o = "out";
-		boolean Oflag;
-		int [] comp = new int[3];
+		int i=0,j;
+		Scanner sc = new Scanner(System.in);
+		
 		int r = rand();
-		int r1 = r;
+		
 		System.out.println(r);
 		
-		while(true) {
-			Oflag = false;
-			Scanner sc = new Scanner(System.in);
+		while(i<10) {
+
 			System.out.print("맞춰볼 숫자를 입력: ");
 			int x = sc.nextInt();
-
-			s = strike(x);
-			b = ball(x) - s;
-			if(s==0&&b==0) Oflag = true;
-			if(Oflag) System.out.println(o);
-			else System.out.printf("S%d B%d\n",s,b);
-
-
-		}
+			System.out.println(r+"r");
+			sbo(x);
+			i++;
+		}//while
+		sc.close();
 	}//main
 
 

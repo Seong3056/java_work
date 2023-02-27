@@ -29,26 +29,28 @@ public class ArrayInsert_Quiz {
 
 		outer: 
 			for(int i=0;i<foods.length;i++) {		//for문의 시작
-				//0부터 'foods'의 배열길이(50)까지 반복
+				//0부터 'foods'의 배열길이(50)미만까지 반복
 				System.out.print("먹고싶은 음식=> ");
 				String f = sc.next();					//입력받은 값을 'f'에 저장
-
-
+				
 
 				if(f.equals("배불러")) {						//입력받은 'f'값이 "배불러"일때
 					System.out.println("입력을 종료합니다~");
 					break;									//for문을 종료
 				}
 
-			for(int j =0;j<i;j++) {							//입력받은 음식'f'가 저장된 'foods'의 배열에 있는지 검사 for
+			for(int j=0; j<i; j++) {							//입력받은 'f'가 저장된 'foods'의 배열에 있는지 검사 for
 				
 				if( f.equals(foods[j]) ) {					// if( f == foods[j] ) foods[0]부터 foods[j(i-1)]까지 입력받은 f의 음식이 있는가?    
 					System.out.println("이미 입력한 음식입니다.");
-					continue outer;							// 있다면 continue문을 통해 outer로 이동 이아래로 있는 코드는 실행하지않음
+					i--;
+					continue outer;							// 있다면 continue문을 통해 outer로 이동 (이아래로 있는 코드는 실행하지않음)
 				}
 			}
 				foods[i] = f;							//입력받은 값이 "배불러"가 아닌 모든 단어를 'foods'배열에 저장
-				
+				for(int j=0; j<=i; j++) {
+					System.out.println("a "+foods[j]);
+				}
 
 
 			}		//for문의 끝        }

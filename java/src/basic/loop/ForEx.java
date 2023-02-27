@@ -22,13 +22,14 @@ public class ForEx {
 		System.out.print("정수: ");
 		int a = sc.nextInt();
 		int x = 1;
-		
+		sc.close();
 		for(i=1 ; i<=a ; i++) 
 			x *= i;
 		
-		sc.close();
+		
 		
 		System.out.println(x);
+		
 		
 		
 		

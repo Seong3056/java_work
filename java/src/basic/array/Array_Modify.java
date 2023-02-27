@@ -3,8 +3,6 @@ package basic.array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import basic.begin.ScannerEx;
-
 public class Array_Modify {
 
 	public static void main(String[] args) {
@@ -35,6 +33,7 @@ public class Array_Modify {
 			}
 		if(!flag)System.out.println("없는 음식");
 		System.out.println(Arrays.toString(foods));
+		sc.close();
 	}
 
 }

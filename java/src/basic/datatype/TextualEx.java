@@ -1,7 +1,5 @@
 package basic.datatype;
 
-import java.awt.Window.Type;
-import java.nio.file.spi.FileSystemProvider;
 
 public class TextualEx {
 
